@@ -1,0 +1,28 @@
+ @mixin break($size) {
+     @media (min-width: map-get($breakpoints, $size)) {
+         @content;
+     }
+ }
+ 
+ @mixin font-size($size) {
+     font-size: calculate-rem($size);
+ }
+ 
+ @mixin img-fluid {
+     & {
+         max-width: 100%;
+         height: auto;
+     }
+ }
+ 
+ @mixin border-radius($radius) {
+     border-radius: $radius;
+ }
+ 
+ @mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+     position: $position;
+     top: $top;
+     right: $right;
+     bottom: $bottom;
+     left: $left;
+ }
