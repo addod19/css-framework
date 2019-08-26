@@ -1,6 +1,7 @@
 $sides:(top, bottom, left, right);
 $sizes:(sm, md, lg);
 $values:1rem;
+$alignment: (center, left, right, justify);
 @each $side in $sides {
     @each $value in $values {
         @each $size in $sizes {
@@ -48,4 +49,14 @@ $values:1rem;
             }
         }
     }
+}
+
+@each $location in $alignment {
+    .text-#{$location} {
+        text-align: $location;
+    }
+}
+
+.small {
+    font-size: 0.7rem;
 }

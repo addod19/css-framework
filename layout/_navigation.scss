@@ -24,4 +24,11 @@ $colors:( red:#D10918, silver: #c0c0c0, white: #fff, black: #000000, gray:#80808
             }
         }
     }
+    .nav-list {
+        display: flex;
+        .list-item {
+            color: $silver;
+            font-size: $size;
+        }
+    }
 }

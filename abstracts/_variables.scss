@@ -1,1 +1,6 @@
 $colors:( red:#D10918, silver: #c0c0c0, white: #fff, black: #000000, gray:#808080, );
+$alignment: (center, left, right, justify);
+$rem: (1rem, 1.5rem, 2rem, 2.5rem, 3rem, 3.5rem, 4rem, 4.5rem, 5rem, 5.5rem, 6rem, 6.5rem, 7rem, 7.5rem, 8rem, 8.5rem, 9rem, 9.5rem, 10rem);
+$percentage: (5%, 10%, 15%, 20%, 2%5, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 95%, 100%);
+$width: ($percentage);
+$height: ($rem);

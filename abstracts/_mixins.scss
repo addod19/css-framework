@@ -15,6 +15,12 @@
      }
  }
  
+ @mixin img-rounded {
+     width: 70px;
+     height: 70px;
+     border-radius: 50%;
+ }
+ 
  @mixin border-radius($radius) {
      border-radius: $radius;
  }
