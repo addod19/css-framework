@@ -21,12 +21,12 @@ $break-points: ( sm: 768px, md: 992px, lg: 1200px);
 }
 
 .row {
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     @include make-grid(column);
 }
 
 .column {
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(300px,1fr));
     @include make-grid(row);
 }
 
