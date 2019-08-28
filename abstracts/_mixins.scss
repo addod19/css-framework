@@ -4,8 +4,9 @@
      }
  }
  
- @mixin font-size($size) {
-     font-size: calculate-rem($size);
+ @mixin font-size($sizeValue: 1.6) {
+     font-size: ($sizeValue * 10) + px;
+     font-size: $sizeValue + rem;
  }
  
  @mixin img-fluid {
@@ -18,11 +19,11 @@
  @mixin img-rounded {
      width: 70px;
      height: 70px;
-     border-radius: 50%;
+     border-radius: $percentage;
  }
  
- @mixin border-radius($radius) {
-     border-radius: $radius;
+ @mixin border-radius($percentage) {
+     border-radius: $percentage;
  }
  
  @mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
