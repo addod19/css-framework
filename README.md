@@ -2,7 +2,7 @@
 
 This project focuses on building a grid-based CSS framework like bootstrap, foundation semtantic UI - to name just a few.
 
-We used CSS Grid and Flex as the basic building block for the grid system. We maintained the conventional 12-grid style and included come commonly used components and utilities. You can find out more by checking out the [documentation](./docs.md).
+We used CSS Grid and Flex as the basic building block for the grid system. We maintained the conventional 12-grid style and included come commonly used components and utilities. 
 
 The project is part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/ "The Global School for Remote Software Developers!").
 
