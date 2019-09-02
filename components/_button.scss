@@ -1,0 +1,46 @@
+$colors:( red:#D10918, silver: #c0c0c0, white: #fff, black: #000000, gray:#808080, );
+@each $key,
+$value in $colors {
+    .#{$key}-but-sm {
+        background: $value;
+        border-radius: 3px;
+        border: 0;
+        padding: 5px;
+        &:hover {
+            color: compliment($value);
+            cursor: pointer;
+            background-color: lighten($value, 20%)
+        }
+    }
+}
+
+@each $key,
+$value in $colors {
+    .#{$key}-but-md {
+        background: $value;
+        border-radius: 3px;
+        border: 0;
+        padding: 15px;
+        &:hover {
+            color: compliment($value);
+            cursor: pointer;
+            background-color: lighten($value, 20%)
+        }
+    }
+}
+
+@each $key,
+$value in $colors {
+    .#{$key}-but-lg {
+        background: $value;
+        border-radius: 3px;
+        border: 0;
+        padding: 20px;
+        font-size: 1.3rem;
+        &:hover {
+            color: compliment($value);
+            cursor: pointer;
+            background-color: lighten($value, 20%)
+        }
+    }
+}

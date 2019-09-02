@@ -1,0 +1,62 @@
+$sides:(top, bottom, left, right);
+$sizes:(sm, md, lg);
+$values:1rem;
+$alignment: (center, left, right, justify);
+@each $side in $sides {
+    @each $value in $values {
+        @each $size in $sizes {
+            .margin-#{$side}-#{$size}-#{$value} {
+                @if $size==sm {
+                    $new_val: round($value/4);
+                    margin-#{$side}:#{$new_val}rem;
+                }
+                @else if $size==md {
+                    $new_val: round($value/3);
+                    margin-#{$side}:#{$new_val}px;
+                }
+                @else if $size==lg {
+                    $new_val: round($value);
+                    margin-#{$side}:#{$new_val}px;
+                }
+            }
+            .padding-#{$side}-#{$size}-#{$value} {
+                @if $size==sm {
+                    $new_val: round($value/4);
+                    padding-#{$side}:#{$new_val}px;
+                }
+                @else if $size==md {
+                    $new_val: round($value/3);
+                    padding-#{$side}:#{$new_val}px;
+                }
+                @else if $size==lg {
+                    $new_val: round($value);
+                    padding-#{$side}:#{$new_val}px;
+                }
+            }
+            .padding-#{$side}-#{$size}-#{$value} {
+                @if $size==sm {
+                    $new_val: round($value/4);
+                    padding-#{$side}:#{$new_val}px;
+                }
+                @else if $size==md {
+                    $new_val: round($value/3);
+                    padding-#{$side}:#{$new_val}px;
+                }
+                @else if $size==lg {
+                    $new_val: round($value);
+                    padding-#{$side}:#{$new_val}px;
+                }
+            }
+        }
+    }
+}
+
+@each $location in $alignment {
+    .text-#{$location} {
+        text-align: $location;
+    }
+}
+
+.small {
+    font-size: 0.7rem;
+}

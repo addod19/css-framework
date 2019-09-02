@@ -1,0 +1,35 @@
+ @mixin break($size) {
+     @media (min-width: map-get($breakpoints, $size)) {
+         @content;
+     }
+ }
+ 
+ @mixin font-size($sizeValue: 1.6) {
+     font-size: ($sizeValue * 10) + px;
+     font-size: $sizeValue + rem;
+ }
+ 
+ @mixin img-fluid {
+     & {
+         max-width: 100%;
+         height: auto;
+     }
+ }
+ 
+ @mixin img-rounded {
+     width: 70px;
+     height: 70px;
+     border-radius: $percentage;
+ }
+ 
+ @mixin border-radius($percentage) {
+     border-radius: $percentage;
+ }
+ 
+ @mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+     position: $position;
+     top: $top;
+     right: $right;
+     bottom: $bottom;
+     left: $left;
+ }
