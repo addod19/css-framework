@@ -58,7 +58,7 @@ aside {
 
 .img-thumbnail {
     min-height: 6rem;
-    min-width: 90%;
+    width: 100%;
 }
 
 video {
@@ -104,6 +104,15 @@ video {
 
 .vid-width {
     width: 100%;
+}
+
+.grid-1-1-8 {
+    width: 90%;
+    height: 9rem;
+    border: 1px solid white;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 8fr;
 }
 
 .subscribe {
@@ -273,6 +282,11 @@ a {
 .grid-1-8 {
     display: grid;
     grid-template-columns: 1fr 8fr;
+}
+
+.grid-1-1-8 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 8fr;
 }
 
 .grid-1 {
