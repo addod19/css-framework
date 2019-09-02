@@ -750,6 +750,10 @@ table {
     font-size: 1.6rem;
 }
 
+.vw-100 {
+    width: 100%;
+}
+
 .margin-top-sm-1rem {
     margin-top: 1rem;
 }
