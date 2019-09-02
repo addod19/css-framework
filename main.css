@@ -136,6 +136,20 @@ table {
     border-spacing: 0;
 }
 
+.red {
+    color: #D10918;
+}
+
+.silver-bold {
+    color: silver;
+    font-weight: 200;
+}
+
+.dark-bold {
+    color: #2e2e2e;
+    font-weight: 300;
+}
+
 .red-but-sm {
     background: #D10918;
     border-radius: 3px;
@@ -378,6 +392,9 @@ table {
     }
     .row .box-xs-12 {
         grid-column: span 12;
+    }
+    .hide-sm {
+        display: none;
     }
 }
 
@@ -679,13 +696,29 @@ table {
     grid-gap: 50px;
 }
 
+.text-lg-black {
+    color: black;
+}
+
+.input-w-50 {
+    width: 50%;
+    height: 2rem;
+}
+
 .navbar {
     display: flex;
-    justify-content: space-around;
-    background: #c0c0c0;
+    background: #white;
     max-width: 100%;
     height: 4rem;
     padding: 1.5%;
+}
+
+.bg-red {
+    background: #D10918;
+    color: #f3f3f3;
+    width: 1.5rem;
+    height: 1rem;
+    text-align: center;
 }
 
 .navbar .navbar-brand:hover {
@@ -859,6 +892,18 @@ table {
 
 .padding-right-lg-1rem {
     padding-right: 1rem;
+}
+
+.margin-left-lg-4rem {
+    margin-left: 4rem;
+}
+
+.margin-left-lg-5rem {
+    margin-left: 5rem;
+}
+
+.margin-left-lg-10 {
+    margin-left: 10rem;
 }
 
 .text-center {

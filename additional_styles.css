@@ -6,13 +6,11 @@ body {
     padding: 0;
 }
 
-
 .container {
     width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: 4fr 2fr;
-
 }
 
 .ml-3 {
@@ -31,6 +29,11 @@ body {
 .text-small {
     font-size: .8rem;
     color: silver;
+}
+
+.text-large {
+    font-size: 1.0rem;
+    color: black;
 }
 
 .r-rev {
@@ -123,11 +126,22 @@ p {
     font-weight: 400;
 }
 
+.pos-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
 .img-rounded {
     height: 4rem;
     width: 4rem;
     border-radius: 50%;
     margin-top: 0;
+}
+
+.img-rounded-profile {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
 }
 
 .td-none {
@@ -170,8 +184,13 @@ hr {
     .sm-hide {
         display: none;
     }
-    .enter-comments {
-      display: none;
+    .hide {
+        display: none;
+    }
+    .pos-right {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 1rem;
     }
     footer {
         margin-bottom: 0;
@@ -233,16 +252,30 @@ figcaption {
 }
 
 .enter-comments {
-  width: 90%;
-  margin-left: 5%;
-  height: 4rem;
-  display: grid;
-  grid-template-columns: 1fr 5fr;
+    width: 90%;
+    margin-left: 5%;
+    height: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
 }
+
 input[name="message"] {
-  height: 2rem;
+    height: 2rem;
 }
+
 a {
-  color: silver;
-  text-decoration: none;
+    color: silver;
+    text-decoration: none;
+}
+
+.more-comments {}
+
+.grid-1-8 {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
 }
