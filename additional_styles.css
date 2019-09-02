@@ -42,11 +42,6 @@ body {
     color: white;
 }
 
-section {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
 main {
     height: auto;
     display: block;
@@ -206,7 +201,7 @@ hr {
     }
 }
 
-article {
+.article {
     height: 8rem;
     width: 100%;
 }
